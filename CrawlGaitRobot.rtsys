@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<rts:RtsProfile rts:abstract="RT System created by rtcryo." rts:creationDate="2016-11-01T10:53:09" rts:id="RTSystem:Me:RTSystem:0" rts:updateDate="2016-11-01T10:53:09" rts:version="0.2" xmlns:rts="http://www.openrtp.org/namespaces/rts" xmlns:rtsExt="http://www.openrtp.org/namespaces/rts_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <rts:Components rts:activeConfigurationSet="default" rts:compositeType="None" rts:id="RTC:ysuga.net:Test:RTnoProxy:1.0.0" rts:instanceName="RTnoProxy0" rts:isRequired="true" rts:pathUri="localhost/RTnoProxy0.rtc" rtsExt:visible="true" xsi:type="rtsExt:component_ext">
+        <rts:DataPorts rts:name="in" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:data="23" rts:name="portNumber"/>
+            <rts:ConfigurationData rts:data="57600" rts:name="baudrate"/>
+            <rts:ConfigurationData rts:data="192.168.42.100" rts:name="ipAddress"/>
+            <rts:ConfigurationData rts:data="\\.\COM5" rts:name="comport"/>
+            <rts:ConfigurationData rts:data="serial" rts:name="connectionType"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0" xsi:type="rtsExt:execution_context_ext"/>
+        <rtsExt:Location rtsExt:direction="down" rtsExt:height="0" rtsExt:width="0" rtsExt:x="0" rtsExt:y="0"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000064000000010102000e0000003135302e32392e39392e3130360062f80e000000fe47f3175800002704000000001f00000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:Components rts:activeConfigurationSet="default" rts:compositeType="None" rts:id="RTC:AIST:Controller:Foot_Position_Controller:1.0.0" rts:instanceName="Foot_Position_Controller0" rts:isRequired="true" rts:pathUri="localhost/Foot_Position_Controller0.rtc" rtsExt:visible="true" xsi:type="rtsExt:component_ext">
+        <rts:DataPorts rts:name="Trajectory" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="motor_pos" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="motor_pos_0" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="motor_pos_1" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="motor_pos_2" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="motor_pos_3" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rb2"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rb1"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rb0"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rf2"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rf1"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_rf0"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg2_offset_x"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg2_offset_y"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg2_offset_z"/>
+            <rts:ConfigurationData rts:data="0.055" rts:name="leg1_length"/>
+            <rts:ConfigurationData rts:data="0.005" rts:name="body_height"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg1_offset_y"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rf2"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg1_offset_z"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lf2"/>
+            <rts:ConfigurationData rts:data="0.07" rts:name="body_length"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lb2"/>
+            <rts:ConfigurationData rts:data="0.025" rts:name="leg0_height"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rb2"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg1_offset_x"/>
+            <rts:ConfigurationData rts:data="0.08" rts:name="leg2_length"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lf0"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lf1"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lf2"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rb1"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg0_offset_z"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lf1"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg0_offset_x"/>
+            <rts:ConfigurationData rts:data="0" rts:name="leg0_offset_y"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lb1"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lb0"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lb2"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lb0"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_lb1"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rf0"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rf1"/>
+            <rts:ConfigurationData rts:data="0.02" rts:name="leg0_length"/>
+            <rts:ConfigurationData rts:data="1" rts:name="dir_lf0"/>
+            <rts:ConfigurationData rts:data="0" rts:name="offset_rb0"/>
+            <rts:ConfigurationData rts:data="0.07" rts:name="body_width"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__widget__">
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rb2"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rb1"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rb0"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rf2"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rf1"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_rf0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg2_offset_x"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg2_offset_y"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg2_offset_z"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg1_length"/>
+            <rts:ConfigurationData rts:data="text" rts:name="body_height"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg1_offset_y"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rf2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg1_offset_z"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lf2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="body_length"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lb2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg0_height"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rb2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg1_offset_x"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg2_length"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lf0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lf1"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lf2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rb1"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg0_offset_z"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lf1"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg0_offset_x"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg0_offset_y"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lb1"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lb0"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lb2"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lb0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_lb1"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rf0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rf1"/>
+            <rts:ConfigurationData rts:data="text" rts:name="leg0_length"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="dir_lf0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="offset_rb0"/>
+            <rts:ConfigurationData rts:data="text" rts:name="body_width"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__type__">
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rb2"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rb1"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rb0"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rf2"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rf1"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_rf0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg2_offset_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg2_offset_y"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg2_offset_z"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg1_length"/>
+            <rts:ConfigurationData rts:data="double" rts:name="body_height"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg1_offset_y"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rf2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg1_offset_z"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lf2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="body_length"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lb2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg0_height"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rb2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg1_offset_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg2_length"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lf0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lf1"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lf2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rb1"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg0_offset_z"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lf1"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg0_offset_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg0_offset_y"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lb1"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lb0"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lb2"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lb0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_lb1"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rf0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rf1"/>
+            <rts:ConfigurationData rts:data="double" rts:name="leg0_length"/>
+            <rts:ConfigurationData rts:data="int" rts:name="dir_lf0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="offset_rb0"/>
+            <rts:ConfigurationData rts:data="double" rts:name="body_width"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__constraints__">
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rb2"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rb1"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rb0"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lb1"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lb0"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lb2"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lf1"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lf0"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_lf2"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rf2"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rf1"/>
+            <rts:ConfigurationData rts:data="(1,-1)" rts:name="dir_rf0"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0" xsi:type="rtsExt:execution_context_ext"/>
+        <rtsExt:Location rtsExt:direction="down" rtsExt:height="0" rtsExt:width="0" rtsExt:x="0" rtsExt:y="0"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000064000000010102000e0000003135302e32392e39392e3130360062f80e000000fe47f3175800002704000000000900000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:Components rts:activeConfigurationSet="default" rts:compositeType="None" rts:id="RTC:AIST:Controller:Crawl_Gait_Controller:1.0.0" rts:instanceName="Crawl_Gait_Controller0" rts:isRequired="true" rts:pathUri="localhost/Crawl_Gait_Controller0.rtc" rtsExt:visible="true" xsi:type="rtsExt:component_ext">
+        <rts:DataPorts rts:name="target_velocity" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="update_pose" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="Trajectory" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="current_pose" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="stability_margin" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="NE_stability_margin" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:data="0.096" rts:name="center_pos_y"/>
+            <rts:ConfigurationData rts:data="0.077" rts:name="center_pos_x"/>
+            <rts:ConfigurationData rts:data="-0.001" rts:name="min_stability_margin"/>
+            <rts:ConfigurationData rts:data="-0.04" rts:name="lower_limit_z"/>
+            <rts:ConfigurationData rts:data="-0.04" rts:name="lower_limit_x"/>
+            <rts:ConfigurationData rts:data="-1" rts:name="sampling_time"/>
+            <rts:ConfigurationData rts:data="0.08" rts:name="stride"/>
+            <rts:ConfigurationData rts:data="0.04" rts:name="upper_limit_z"/>
+            <rts:ConfigurationData rts:data="-0.079" rts:name="center_pos_z"/>
+            <rts:ConfigurationData rts:data="0.04" rts:name="upper_limit_y"/>
+            <rts:ConfigurationData rts:data="0.04" rts:name="upper_limit_x"/>
+            <rts:ConfigurationData rts:data="-0.04" rts:name="lower_limit_y"/>
+            <rts:ConfigurationData rts:data="0.05" rts:name="lift_height"/>
+            <rts:ConfigurationData rts:data="0" rts:name="move_limit"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__widget__">
+            <rts:ConfigurationData rts:data="text" rts:name="center_pos_y"/>
+            <rts:ConfigurationData rts:data="text" rts:name="center_pos_x"/>
+            <rts:ConfigurationData rts:data="text" rts:name="min_stability_margin"/>
+            <rts:ConfigurationData rts:data="text" rts:name="sampling_time"/>
+            <rts:ConfigurationData rts:data="text" rts:name="stride"/>
+            <rts:ConfigurationData rts:data="text" rts:name="center_pos_z"/>
+            <rts:ConfigurationData rts:data="text" rts:name="lift_height"/>
+            <rts:ConfigurationData rts:data="radio" rts:name="move_limit"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__type__">
+            <rts:ConfigurationData rts:data="double" rts:name="center_pos_y"/>
+            <rts:ConfigurationData rts:data="double" rts:name="center_pos_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="min_stability_margin"/>
+            <rts:ConfigurationData rts:data="double" rts:name="lower_limit_z"/>
+            <rts:ConfigurationData rts:data="double" rts:name="lower_limit_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="sampling_time"/>
+            <rts:ConfigurationData rts:data="double" rts:name="stride"/>
+            <rts:ConfigurationData rts:data="double" rts:name="upper_limit_z"/>
+            <rts:ConfigurationData rts:data="double" rts:name="center_pos_z"/>
+            <rts:ConfigurationData rts:data="double" rts:name="upper_limit_y"/>
+            <rts:ConfigurationData rts:data="double" rts:name="upper_limit_x"/>
+            <rts:ConfigurationData rts:data="double" rts:name="lower_limit_y"/>
+            <rts:ConfigurationData rts:data="double" rts:name="lift_height"/>
+            <rts:ConfigurationData rts:data="short" rts:name="move_limit"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__constraints__">
+            <rts:ConfigurationData rts:data="(0,1)" rts:name="move_limit"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0" xsi:type="rtsExt:execution_context_ext"/>
+        <rtsExt:Location rtsExt:direction="down" rtsExt:height="0" rtsExt:width="0" rtsExt:x="0" rtsExt:y="0"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000064000000010102000e0000003135302e32392e39392e3130360062f80e000000fe47f3175800002704000000000000000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:Components rts:activeConfigurationSet="default" rts:compositeType="None" rts:id="RTC:Noriaki Ando and Shinji Kurihara:example:TkJoyStick:1.0" rts:instanceName="TkJoyStick0" rts:isRequired="true" rts:pathUri="localhost/TkJoyStick0.rtc" rtsExt:visible="true" xsi:type="rtsExt:component_ext">
+        <rts:DataPorts rts:name="pos" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="vel" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:ConfigurationSets rts:id="default"/>
+        <rts:ExecutionContexts rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0" xsi:type="rtsExt:execution_context_ext"/>
+        <rtsExt:Location rtsExt:direction="down" rtsExt:height="0" rtsExt:width="0" rtsExt:x="0" rtsExt:y="0"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000064000000010102000e0000003135302e32392e39392e3130360065f80e000000fe47f3175800001234000000000600000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:Components rts:activeConfigurationSet="default" rts:compositeType="None" rts:id="RTC:AIST:Converter:FloatSeqToVelocity:1.0.0" rts:instanceName="FloatSeqToVelocity0" rts:isRequired="true" rts:pathUri="localhost/FloatSeqToVelocity0.rtc" rtsExt:visible="true" xsi:type="rtsExt:component_ext">
+        <rts:DataPorts rts:name="in" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:DataPorts rts:name="out" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
+        <rts:ConfigurationSets rts:id="default">
+            <rts:ConfigurationData rts:data="0.002" rts:name="velocity_by_position"/>
+            <rts:ConfigurationData rts:data="-0.02" rts:name="rotation_by_position"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__widget__">
+            <rts:ConfigurationData rts:data="text" rts:name="velocity_by_position"/>
+            <rts:ConfigurationData rts:data="text" rts:name="rotation_by_position"/>
+        </rts:ConfigurationSets>
+        <rts:ConfigurationSets rts:id="__type__">
+            <rts:ConfigurationData rts:data="double" rts:name="velocity_by_position"/>
+            <rts:ConfigurationData rts:data="double" rts:name="rotation_by_position"/>
+        </rts:ConfigurationSets>
+        <rts:ExecutionContexts rts:id="0" rts:kind="PERIODIC" rts:rate="1000.0" xsi:type="rtsExt:execution_context_ext"/>
+        <rtsExt:Location rtsExt:direction="down" rtsExt:height="0" rtsExt:width="0" rtsExt:x="0" rtsExt:y="0"/>
+        <rtsExt:Properties rtsExt:name="IOR" rtsExt:value="IOR:010000003500000049444c3a6f70656e72746d2e616973742e676f2e6a702f4f70656e52544d2f44617461466c6f77436f6d706f6e656e743a312e3000000000010000000000000064000000010102000e0000003135302e32392e39392e3130360065f80e000000fe47f3175800001234000000000100000200000000000000080000000100000000545441010000001c00000001000000010001000100000001000105090101000100000009010100"/>
+    </rts:Components>
+    <rts:DataPortConnectors rts:connectorId="79fad08c-3de6-4e90-8622-5ac948766ec6" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="Foot_Position_Controller0.motor_pos_RTnoProxy0.in" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
+        <rts:sourceDataPort rts:componentId="RTC:AIST:Controller:Foot_Position_Controller:1.0.0" rts:instanceName="Foot_Position_Controller0" rts:portName="Foot_Position_Controller0.motor_pos" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/Foot_Position_Controller0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:ysuga.net:Test:RTnoProxy:1.0.0" rts:instanceName="RTnoProxy0" rts:portName="RTnoProxy0.in" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/RTnoProxy0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.publisher.push_policy" rtsExt:value="all"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="flush"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedFloatSeq:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+    </rts:DataPortConnectors>
+    <rts:DataPortConnectors rts:connectorId="5af6a0ec-f90b-4efa-a0cd-c8847a167e23" rts:dataType="IDL:RTC/LeggedRobot:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="Crawl_Gait_Controller0.Trajectory_Foot_Position_Controller0.Trajectory" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
+        <rts:sourceDataPort rts:componentId="RTC:AIST:Controller:Crawl_Gait_Controller:1.0.0" rts:instanceName="Crawl_Gait_Controller0" rts:portName="Crawl_Gait_Controller0.Trajectory" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/Crawl_Gait_Controller0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:AIST:Controller:Foot_Position_Controller:1.0.0" rts:instanceName="Foot_Position_Controller0" rts:portName="Foot_Position_Controller0.Trajectory" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/Foot_Position_Controller0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.publisher.push_policy" rtsExt:value="all"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="flush"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/LeggedRobot:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+    </rts:DataPortConnectors>
+    <rts:DataPortConnectors rts:connectorId="be2b2300-9fd4-11e6-80cf-bc9a78563412" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="TkJoyStick0.pos_FloatSeqToVelocity0.in" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
+        <rts:sourceDataPort rts:componentId="RTC:Noriaki Ando and Shinji Kurihara:example:TkJoyStick:1.0" rts:instanceName="TkJoyStick0" rts:portName="TkJoyStick0.pos" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/TkJoyStick0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:AIST:Converter:FloatSeqToVelocity:1.0.0" rts:instanceName="FloatSeqToVelocity0" rts:portName="FloatSeqToVelocity0.in" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/FloatSeqToVelocity0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.publisher.push_policy" rtsExt:value="all"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="flush"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedFloatSeq:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+    </rts:DataPortConnectors>
+    <rts:DataPortConnectors rts:connectorId="cd0615b0-9fd4-11e6-9187-bc9a78563412" rts:dataType="IDL:RTC/TimedVelocity2D:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="FloatSeqToVelocity0.out_Crawl_Gait_Controller0.target_velocity" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
+        <rts:sourceDataPort rts:componentId="RTC:AIST:Converter:FloatSeqToVelocity:1.0.0" rts:instanceName="FloatSeqToVelocity0" rts:portName="FloatSeqToVelocity0.out" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/FloatSeqToVelocity0.rtc"/>
+        </rts:sourceDataPort>
+        <rts:targetDataPort rts:componentId="RTC:AIST:Controller:Crawl_Gait_Controller:1.0.0" rts:instanceName="Crawl_Gait_Controller0" rts:portName="Crawl_Gait_Controller0.target_velocity" xsi:type="rtsExt:target_port_ext">
+            <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/Crawl_Gait_Controller0.rtc"/>
+        </rts:targetDataPort>
+        <rtsExt:Properties rtsExt:name="dataport.publisher.push_policy" rtsExt:value="all"/>
+        <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="flush"/>
+        <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
+        <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedVelocity2D:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
+    </rts:DataPortConnectors>
+</rts:RtsProfile>
