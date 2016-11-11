@@ -93,8 +93,8 @@ void rtcconf(config_str& conf, exec_cxt_str& exec_cxt) {
  **/
 //TimedLong in0;
 //InPort<TimedLong> in0In("in0", in0);
-TimedFloatSeq in;
-InPort<TimedFloatSeq> inIn("in", in);
+TimedDoubleSeq in;
+InPort<TimedDoubleSeq> inIn("in", in);
 
 Servo myservo[12];  // create servo object to control a servo 
 const int offset[12] = {65, 40, 160, 125, 155, 40, 65, 40, 160, 125, 155, 40};

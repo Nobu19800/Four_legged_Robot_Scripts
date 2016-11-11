@@ -426,7 +426,7 @@
         <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
         <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
     </rts:DataPortConnectors>
-    <rts:DataPortConnectors rts:connectorId="b0707ec7-9f4d-4a7d-95c0-656739156c92" rts:dataType="IDL:RTC/TimedFloatSeq:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="Foot_Position_Controller0.motor_pos_Four_legged_Robot_Simulator0.servo" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
+    <rts:DataPortConnectors rts:connectorId="b0707ec7-9f4d-4a7d-95c0-656739156c92" rts:dataType="IDL:RTC/TimedDoubleSeq:1.0" rts:dataflowType="push" rts:interfaceType="corba_cdr" rts:name="Foot_Position_Controller0.motor_pos_Four_legged_Robot_Simulator0.servo" rts:subscriptionType="flush" xsi:type="rtsExt:dataport_connector_ext">
         <rts:sourceDataPort rts:componentId="RTC:AIST:Controller:Foot_Position_Controller:1.0.0" rts:instanceName="Foot_Position_Controller0" rts:portName="Foot_Position_Controller0.motor_pos" xsi:type="rtsExt:target_port_ext">
             <rtsExt:Properties rtsExt:name="COMPONENT_PATH_ID" rtsExt:value="localhost/Foot_Position_Controller0.rtc"/>
         </rts:sourceDataPort>
@@ -437,7 +437,7 @@
         <rtsExt:Properties rtsExt:name="dataport.subscription_type" rtsExt:value="flush"/>
         <rtsExt:Properties rtsExt:name="dataport.interface_type" rtsExt:value="corba_cdr"/>
         <rtsExt:Properties rtsExt:name="dataport.dataflow_type" rtsExt:value="push"/>
-        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedFloatSeq:1.0"/>
+        <rtsExt:Properties rtsExt:name="dataport.data_type" rtsExt:value="IDL:RTC/TimedDoubleSeq:1.0"/>
         <rtsExt:Properties rtsExt:name="dataport.serializer.cdr.endian" rtsExt:value="little,big"/>
     </rts:DataPortConnectors>
 </rts:RtsProfile>
