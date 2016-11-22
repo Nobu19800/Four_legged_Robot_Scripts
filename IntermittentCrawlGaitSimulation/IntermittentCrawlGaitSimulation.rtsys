@@ -286,8 +286,8 @@
         <rts:DataPorts rts:name="in" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
         <rts:DataPorts rts:name="out" rtsExt:visible="true" xsi:type="rtsExt:dataport_ext"/>
         <rts:ConfigurationSets rts:id="default">
-            <rts:ConfigurationData rts:data="0.002" rts:name="velocity_by_position"/>
-            <rts:ConfigurationData rts:data="-0.02" rts:name="rotation_by_position"/>
+            <rts:ConfigurationData rts:data="0.0002" rts:name="velocity_by_position"/>
+            <rts:ConfigurationData rts:data="-0.002" rts:name="rotation_by_position"/>
         </rts:ConfigurationSets>
         <rts:ConfigurationSets rts:id="__widget__">
             <rts:ConfigurationData rts:data="text" rts:name="velocity_by_position"/>
@@ -322,7 +322,7 @@
             <rts:ConfigurationData rts:data="0.04" rts:name="upper_limit_y"/>
             <rts:ConfigurationData rts:data="0.04" rts:name="upper_limit_x"/>
             <rts:ConfigurationData rts:data="-0.04" rts:name="lower_limit_y"/>
-            <rts:ConfigurationData rts:data="0.05" rts:name="lift_height"/>
+            <rts:ConfigurationData rts:data="0.035" rts:name="lift_height"/>
             <rts:ConfigurationData rts:data="0.03" rts:name="side_move_distance"/>
         </rts:ConfigurationSets>
         <rts:ConfigurationSets rts:id="__widget__">
