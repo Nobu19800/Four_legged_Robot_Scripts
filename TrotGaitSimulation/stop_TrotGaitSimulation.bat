@@ -1,3 +1,3 @@
 cd /d %~dp0
 set PATH=C:\Python27\Scripts;%PATH%
-cmd /c rtstart TrotCrawlGaitRobot.rtsys
+cmd /c rtstop TrotGaitSimulation.rtsys
